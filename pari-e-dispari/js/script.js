@@ -6,8 +6,7 @@ let numeroUtente;
 
 while(i < 1){
     pariOdispari = prompt("Scegli Pari o Dispari");
-    pariOdispari.toLowerCase(); // NON CAPISCO NON MI FUNZIONANO 
-    pariOdispari[0].toUpperCase(); // NON CAPISCO NON MI FUNZIONANO 
+    pariOdispari = pariOdispari.toLowerCase(); 
     console.log(pariOdispari)
     if(pariOdispari === "pari" || pariOdispari === "dispari"){
         i++
