@@ -1,9 +1,9 @@
 
 
-let i = 0;
 let pariOdispari;
 let numeroUtente;
 
+let i = 0;
 while(i < 1){
     pariOdispari = prompt("Scegli Pari o Dispari");
     pariOdispari = pariOdispari.toLowerCase(); 
@@ -12,8 +12,8 @@ while(i < 1){
         i++
     }
 }
-let k = 0;
 
+let k = 0;
 while(k < 1){
     numeroUtente = Number.parseInt(prompt("Scegli un numero da 1 a 5!"));
     if(Number.isNaN(numeroUtente) !== true && numeroUtente >= 1 && numeroUtente <= 5){
@@ -37,7 +37,7 @@ function addTwoNumbers (numberA, numberB){
     }
 }
 
-let computerNumber = getRandomNumber(1, 6);
+let computerNumber = getRandomNumber(1, 6);// Sarebbe da 1 a 5 
 console.log(computerNumber);
 
 let matchOddOrEven = addTwoNumbers(numeroUtente, computerNumber);
