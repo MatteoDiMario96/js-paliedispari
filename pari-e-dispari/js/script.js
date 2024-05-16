@@ -1,21 +1,4 @@
-function getRandomNumber (min, max){
-    return Math.floor(Math.random() * (max - min) + min);
-};
 
-function addTwoNumbers (numberA, numberB){
-    let somma = numberA + numberB;
-    if(somma % 2 === 0){
-        return "Pari";
-    } else {
-        return "Dispari";
-    }
-}
-
-let computerNumber = getRandomNumber(1, 6);
-console.log(tryFirst);
-
-let firstMatch = addTwoNumbers(2, 2);
-console.log(firstTry);
 
 let i = 0;
 let pariOdispari;
@@ -33,9 +16,36 @@ while(i < 1){
 let k = 0;
 
 while(k < 1){
-    numeroUtente = prompt("Scegli un numero da 1 a 5!");
+    numeroUtente = Number.parseInt(prompt("Scegli un numero da 1 a 5!"));
     if(Number.isNaN(numeroUtente) !== true && numeroUtente >= 1 && numeroUtente <= 5){
         k++
     }
 }
 console.log(numeroUtente);
+
+
+
+function getRandomNumber (min, max){
+    return Math.floor(Math.random() * (max - min) + min);
+};
+
+function addTwoNumbers (numberA, numberB){
+    let somma = numberA + numberB;
+    if(somma % 2 === 0){
+        return "pari";
+    } else {
+        return "dispari";
+    }
+}
+
+let computerNumber = getRandomNumber(1, 6);
+console.log(computerNumber);
+
+let matchOddOrEven = addTwoNumbers(numeroUtente, computerNumber);
+console.log(matchOddOrEven);
+
+if(pariOdispari === matchOddOrEven){
+    console.log("Hai vinto!");
+}else{
+    console.log("Hai perso!")
+}
