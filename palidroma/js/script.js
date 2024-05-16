@@ -1,4 +1,9 @@
 
+const userWord = prompt("Dammi una parola qualsiasi e io ti dirò se è un palinndromo.");
+
+let userWordReverse = palindromo (userWord)
+console.log(userWordReverse);
+
 
 
 function palindromo (parola){
