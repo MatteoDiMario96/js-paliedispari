@@ -1,8 +1,15 @@
 
-const userWord = prompt("Dammi una parola qualsiasi e io ti dirò se è un palinndromo.");
+let userWord = prompt("Dammi una parola qualsiasi e io ti dirò se è un palinndromo.");
+userWord = userWord.toLowerCase();
 
 let userWordReverse = palindromo (userWord)
 console.log(userWordReverse);
+
+if(userWord === userWordReverse){
+    console.log("La parola è un Palindromo, sei fortunato.")
+}else{
+    console.log("Unlucky, non è un palindromo.")
+}
 
 
 
